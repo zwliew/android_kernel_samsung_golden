@@ -17,6 +17,6 @@ echo -e "\n\nCopying zImage to generated folder"
 cp arch/arm/boot/zImage generated/zImage
 
 echo -e "\n\nCopying modules to generated folder"
-find . -name "*.ko" -exec cp {} generated \;
+find . -name "*.ko" -exec cp {} generated/system/lib/modules \;
 
 echo -e "\n\nDone\n"
