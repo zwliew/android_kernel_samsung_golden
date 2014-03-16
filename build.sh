@@ -13,7 +13,7 @@ make cm_golden_defconfig
 echo -e "\n\nBuilding kernel with duration"
 time make -j5
 
-echo -e \n\n"Copying zImage to generated folder"
+echo -e "\n\nCopying zImage to generated folder"
 cp arch/arm/boot/zImage generated/zImage
 
 echo -e "\n\nCopying modules to generated folder"
