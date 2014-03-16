@@ -3859,7 +3859,7 @@ static int __devinit mxt_probe(struct i2c_client *client,
 	data->num_of_fingers = pdata->num_of_fingers;
 	data->finger_cnt = pdata->touchscreen_is_pressed;
 
-	input_dev->name = "sec_touchscreen";
+	input_dev->name = "golden_touchscreen";
 	input_dev->id.bustype = BUS_I2C;
 
 	input_dev->dev.parent = &client->dev;
